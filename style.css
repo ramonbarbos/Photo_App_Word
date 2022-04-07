@@ -1,0 +1,106 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+h2 {
+ text-align: center;
+}
+
+@media only screen and (min-width : 481px) {
+   .flex-row.row {
+	 display: flex;
+	 flex-wrap: wrap;
+   }
+   .flex-row.row > [class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
+   }
+  .flex-row.row:after, 
+  .flex-row.row:before {
+	 display: flex;
+  }
+}
+
+/* alternate color habilitado apenas em telas pequenas*/
+@media only screen and (max-width : 991px) {
+  .alternate-color {
+		background-color: #F0F0F0;
+	}
+}
+
+/* ajustando padding*/
+@media only screen and (max-width : 575px) {
+	body {
+	padding-top: 2rem;
+	}
+}
+
+
+.flex-row .thumbnail,
+.flex-row .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.flex-text {
+    flex-grow: 1;
+}   
+
+.col-spacing{
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.store-image-one {
+	width: 50%;	
+}
+
+
+.store-image-two {
+	width: 100%;	
+}
+
+.store-div-first{
+	padding-right:5px;	
+}
+
+.store-div-second{
+	padding-left:5px;		
+}
+ 
+/* ABOUT */
+
+
+
+
+
+
+
+
+
+
+
+/* INDEX */
+
+#slider1 .container-fluid.a{
+    background-color: rgb(236, 236, 236);
+    padding-top: 55px;
+    padding-bottom: 55px;
+   
+    margin-bottom: 120px;
+
+}
+
+
+
+
+#slider2 .container-fluid.b{
+    background-color: rgb(236, 236, 236);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
